@@ -7,7 +7,8 @@ namespace Foodie
     {
         public App()
         {
-            MainPage = new NavigationPage(new EditRecipePage());
+            //MainPage = new NavigationPage(new EditRecipePage());
+            MainPage = new NavigationPage(new RecipeListPage());
         }
     }
 
