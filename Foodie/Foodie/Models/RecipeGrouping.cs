@@ -6,6 +6,7 @@ namespace Foodie
     // This is the "list of lists"
     public class RecipeGrouping : List<Recipe>
     {
+        /*
         public string Title { get; set; }
         public string ShortName { get; set; }
 
@@ -14,5 +15,6 @@ namespace Foodie
             Title = title;
             ShortName = shortName;
         }
+        */
     }
 }

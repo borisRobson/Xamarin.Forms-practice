@@ -17,6 +17,7 @@ namespace Foodie
         public string Difficulty { get; set; }
         public string Ingredients { get; set; }
         public string Directions { get; set; }
+        public string ImageName { get; set; }
     }
 
 

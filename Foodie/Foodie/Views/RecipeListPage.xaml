@@ -2,23 +2,16 @@
 <ContentPage 
 		xmlns="http://xamarin.com/schemas/2014/forms" 
 		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-		xmlns:local="clr-namespace:Foodie;assembly=Foodie"
-		x:Class="Foodie.RecipeListPage"
+		xmlns:local="clr-namespace:Foodie;assembly=Foodie" 
+		x:Class="Foodie.RecipeListPage" 
 		Title="Recipes">
+    <ContentPage.Resources>
+    </ContentPage.Resources>
     <ContentPage.Content>
-        <ListView ItemsSource="{x:Static local:RecipeData.AllRecipesGrouped}"				
-				GroupShortNameBinding="{Binding ShortName}"
-				IsGroupingEnabled="true">
-            <ListView.GroupHeaderTemplate>
-                <DataTemplate>
-                    <TextCell Text="{Binding Title}" TextColor="Red"/>
-                </DataTemplate>
-            </ListView.GroupHeaderTemplate>
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <TextCell Text="{Binding RecipeName}" Detail="{Binding MealType}" />
-                </DataTemplate>
-            </ListView.ItemTemplate>
+        <ListView ItemsSource="{x:Static local:RecipeData.AllRecipesGrouped}" 
+				SeparatorVisibility="None" HasUnevenRows="true" 
+				GroupDisplayBinding="{Binding Title}" IsGroupingEnabled="true">
+            
         </ListView>
     </ContentPage.Content>
 </ContentPage>

@@ -43,6 +43,11 @@
     <Compile Include="Models\RecipeGrouping.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Triggers\RequiredValidationTriggerAction.cs" />
+    <Compile Include="Value Converters\BoolToValueConverter.cs" />
+    <Compile Include="Value Converters\RecipeToImageValueConverter.cs" />
+    <Compile Include="ViewCells\RecipeCell.xaml.cs">
+      <DependentUpon>RecipeCell.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\EditRecipePage.xaml.cs">
       <DependentUpon>EditRecipePage.xaml</DependentUpon>
     </Compile>
@@ -72,6 +77,20 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\RecipeListPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\blueberry-muffins.jpg" />
+    <Content Include="Images\burger.jpg" />
+    <Content Include="Images\eggs-benedict.jpg" />
+    <Content Include="Images\ham.jpg" />
+    <Content Include="Images\no-images.txt" />
+    <Content Include="Images\potato-salad.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ViewCells\RecipeCell.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
